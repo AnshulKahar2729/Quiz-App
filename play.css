@@ -1,0 +1,87 @@
+.choice-container{
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgb(86, 165, 235, 0.25);
+    background-color: white;
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.2rem);
+    transition: transform 150ms;
+}
+
+.choice-prefix{
+    padding: 1.5rem 2.5rem;
+    background-color: #0077ff;
+    color: white;
+}
+
+.choice-text{
+    padding: 1.5rem;
+    width: 100%; 
+    /* so that whole button is clickable. */
+}
+
+.correct{
+    background-color: #28a745; 
+}
+
+.horizontal-shake{
+    animation: shake 0.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.incorrect{
+    background-color: #dc3545;
+}
+
+/* Head's Up Display */
+
+#hud{
+    display: flex;  /* this place the element in flex and by default flex is in column so each div will be column itself.*/
+    justify-content: space-between; /*It just pushes both the div to the edge of both side.*/
+}
+
+.hud-prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text{
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #0077ff;
+    margin-top: 1.5rem;
+}
+
+#progressBarFull {
+    height: 3.5rem;
+    background-color: #0077ff;
+    width: 0%;
+  }
+
+
