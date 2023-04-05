@@ -17,43 +17,88 @@ let availableQuestions = [];  // this will contain available questions at any mo
 
 let questions = [
     {
-        question: 'Inside which HTML element do we put the JavaScript??',
-        choice1: '<script>',
-        choice2: '<javascript>',
-        choice3: '<js>',
-        choice4: '<scripting>',
-        answer: 1,
-    },
-    {
-        question:
-            "What is the correct syntax for referring to an external script called 'xxx.js'?",
-        choice1: "<script href='xxx.js'>",
-        choice2: "<script name='xxx.js'>",
-        choice3: "<script src='xxx.js'>",
-        choice4: "<script file='xxx.js'>",
-        answer: 3,
-    },
-    {
-        question: " How do you write 'Hello World' in an alert box?",
-        choice1: "msgBox('Hello World');",
-        choice2: "alertBox('Hello World');",
-        choice3: "msg('Hello World');",
-        choice4: "alert('Hello World');",
+        question: 'Which type of Programming does Python support?',
+        choice1: 'object-oriented programming',
+        choice2: 'structured programming',
+        choice3: 'functional programming',
+        choice4: 'all of the mentioned',
         answer: 4,
     },
     {
-        question: "Which was the most used programming language in 2022 ?",
-        choice1 : "JAVA",
-        choice2 : "PYTHON",
-        choice3 : "JAVASCRIPT",
-        choice4 : "C++",
+        question: "Which of the following is the correct extension of the Python file?",
+        choice1: ".python",
+        choice2: ".pl",
+        choice3: ".py",
+        choice4: ".p",
+        answer: 3,
+    },
+    {
+        question : 'Which keyword is used for function in Python language?',
+        choice1:  'Function',
+        choice2:  'def',
+        choice3:  'Fun',
+        choice4:  'Define',
+        answer : 2
+    },
+    {
+        question: "Python supports the creation of anonymous functions at runtime, using a construct called",
+        choice1 : "pi",
+        choice2 : "anonymous",
+        choice3 : "lamba",
+        choice4 : "def __init__",
         answer : 3
     },
+    {
+        question: "Which of the following functions is a built-in function in python?",
+        choice1 : "factorial()",
+        choice2 : "print()",
+        choice3 : "seed()",
+        choice4 : "sqrt()",
+        answer : 2
+    },{
+        question: "Which of the following is the use of id() function in python?",
+        choice1 : "Every object doesn\'t have a unique id",
+        choice2 : "Id returns the identity of the object",
+        choice3 : "All of the mentioned",
+        choice4 : "None of the mentioned",
+        answer : 2
+    },{
+        question: "Which of the following is not a core data type in Python programming?",
+        choice1 : "Tuples",
+        choice2 : "Lists",
+        choice3 : "Class",
+        choice4 : "Dictionary",
+        answer : 3
+    }
+    ,{
+        question: `What will be the output of the following Python code?
+
+                 print('abc. DEF'.capitalize())`,
+        choice1 : "Abc. def",
+        choice2 : "abc. def",
+        choice3 : "Abc. Def",
+        choice4 : "ABC. DEF",
+        answer : 1
+    },{
+        question: `To add a new element to a list we use which Python command?`,
+        choice1 : "list1.addEnd(5)",
+        choice2 : "list1.addLast(5)",
+        choice3 : "list1.append(5)",
+        choice4 : "list1.add(5)",
+        answer : 3
+    },{
+        question: `Kya tu abhi bhi chutiya hain?`,
+        choice1 : "Hann",
+        choice2 : "Nahi",
+        choice3 : "Pata Nahi",
+        choice4 : "Shayad",
+        answer : 1
+    }
 ];
 
 // constants;
 const correctBonus = 10;
-const maxQuestions = 4;  // number of questions you want for each user to attempt.
+const maxQuestions = 10;  // number of questions you want for each user to attempt.
 
 startGame = () => {
     questionCounter = 0;
@@ -76,7 +121,7 @@ getNewQuestion = () => {
         localStorage.setItem('mostRecentScore', score);
 
         // go to the end page
-        return window.location.assign('end.html');
+        return window.location.assign('/end.html');
     }
 
     // this will select random index for available question array.
