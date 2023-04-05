@@ -44,7 +44,7 @@ let questions = [
         question: "Python supports the creation of anonymous functions at runtime, using a construct called",
         choice1 : "pi",
         choice2 : "anonymous",
-        choice3 : "lamba",
+        choice3 : "lambda",
         choice4 : "def __init__",
         answer : 3
     },
