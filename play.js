@@ -87,12 +87,12 @@ let questions = [
         choice4 : "list1.add(5)",
         answer : 3
     },{
-        question: `Kya tu abhi bhi chutiya hain?`,
-        choice1 : "Hann",
-        choice2 : "Nahi",
-        choice3 : "Pata Nahi",
-        choice4 : "Shayad",
-        answer : 1
+        question: `Which of the following JavaScript cannot do?`,
+        choice1 : "JavaScript can react to events",
+        choice2 : "JavaScript can manipulate HTML elements",
+        choice3 : "JavaScript can be use to validate data",
+        choice4 : "All of the above",
+        answer : 4
     }
 ];
 
